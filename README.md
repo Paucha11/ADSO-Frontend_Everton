@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Frontend Hotel Everton
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto corresponde al frontend del sistema de gestion y reservas del **Hotel Everton**.  
+Fue desarrollado en **React** y se conecta con el backend local por medio de la API.
 
-## Available Scripts
+## Requisitos
 
-In the project directory, you can run:
+- Node.js instalado
+- Backend ejecutandose en `http://localhost:3000`
+- Base de datos configurada en el backend
+
+## Ejecucion del proyecto
+
+Ubicarse en la carpeta del frontend y ejecutar:
+
+```powershell
+npm start
+```
+
+El sistema se abrira en:
+
+```text
+http://localhost:3001
+```
+
+## Scripts disponibles
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia el frontend en modo desarrollo.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Genera la version de produccion en la carpeta `build`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm test`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ejecuta las pruebas configuradas para el proyecto.
 
-### `npm run eject`
+## Credenciales de acceso
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Para ingresar al panel administrativo se dejaron las siguientes credenciales:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Correo: `admin@everton.com`
+- Contrasena: `admin123`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Rutas principales
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `http://localhost:3001/`
+- `http://localhost:3001/administrador`
+- `http://localhost:3001/hotel`
+- `http://localhost:3001/huesped`
+- `http://localhost:3001/empleado`
+- `http://localhost:3001/cargo`
+- `http://localhost:3001/habitacion`
+- `http://localhost:3001/reserva`
 
-## Learn More
+## Observaciones
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- La pagina principal muestra la vista publica del hotel.
+- Los modulos administrativos requieren iniciar sesion.
+- Los formularios del frontend se encuentran conectados con el backend, por lo tanto la informacion registrada queda almacenada en la base de datos.
+- Si se desea revisar el acceso y las rutas de prueba con mas detalle, se puede consultar el archivo `INSTRUCCIONES_DE_ACCESO.md` si fue agregado al proyecto.
